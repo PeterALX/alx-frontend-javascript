@@ -12,7 +12,7 @@ class HolbertonClass {
     return this._location;
   }
 }
-export class StudentHolberton {
+class StudentHolberton {
   constructor(firstName, lastName, holbertonClass) {
     this._firstName = firstName;
     this._lastName = lastName;
