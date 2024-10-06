@@ -1,9 +1,8 @@
-import listOfStudents from "./9-hoisting.js";
+let foo = {
+  [Symbol.toPrimitive](hi) {
+    console.log('hi:' + hi)
+  }
+}
 
-console.log(listOfStudents);
-
-const listPrinted = listOfStudents.map(
-    student => student.fullStudentDescription
-);
-
-console.log(listPrinted)
+let a = Number(foo)
+console.log(a)
