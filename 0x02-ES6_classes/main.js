@@ -1,8 +1,6 @@
-let foo = {
-  [Symbol.toPrimitive](hi) {
-    console.log('hi:' + hi)
-  }
-}
+import SkyHighBuilding from './6-sky_high.js';
 
-let a = Number(foo)
-console.log(a)
+const building = new SkyHighBuilding(140, 60);
+console.log(building.sqft);
+console.log(building.floors);
+console.log(building.evacuationWarningMessage());
